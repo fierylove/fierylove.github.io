@@ -1,7 +1,7 @@
-// app/components/Projects.tsx
 "use client";
 
 import React from "react";
+import dynamic from "next/dynamic"; // Import dynamic from Next.js
 import { projects } from "@/app/data/projects";
 import ReadMore from "./ReadMore";
 import {
@@ -11,6 +11,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+
+// Dynamically import ReactPlayer with SSR disabled
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 const Projects = () => {
   return (
@@ -25,18 +28,17 @@ const Projects = () => {
                 <CarouselItem key={index}>
                   <div className="p-4">
                     <article className="bg-primary p-6 rounded shadow transition-all duration-300">
-                      <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
+                      <h3 className="text-2xl font-bold mb-4">
+                        {project.title}
+                      </h3>
                       {project.videoUrl && (
                         <div className="mb-4">
-                          <iframe
+                          <ReactPlayer
+                            url={project.videoUrl}
                             width="100%"
-                            height="315"
-                            src={project.videoUrl}
-                            title={`${project.title} Trailer`}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                          ></iframe>
+                            height="315px"
+                            controls
+                          />
                         </div>
                       )}
                       {project.images && project.images.length > 0 && (
@@ -54,7 +56,10 @@ const Projects = () => {
                       {project.descriptions && (
                         <ReadMore collapsedHeight={120}>
                           {project.descriptions.map((desc, idx) => (
-                            <p key={idx} className={idx > 0 ? "mt-4" : "mb-4"}>
+                            <p
+                              key={idx}
+                              className={idx > 0 ? "mt-4" : "mb-4"}
+                            >
                               {desc}
                             </p>
                           ))}

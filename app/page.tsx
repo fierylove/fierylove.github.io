@@ -7,6 +7,9 @@ import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Footer from "./components/Footer";
 import Referrals from "./components/Referrals";
+import { referralsData } from "./data/referrals";
+
+
 
 export default function Home() {
   return (
@@ -17,7 +20,7 @@ export default function Home() {
           <Banner />
           <Education />
           <Projects />
-          <Referrals />
+          <Referrals referrals={referralsData}/>
         </main>
         <Footer />
       </div>
