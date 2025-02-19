@@ -51,10 +51,10 @@ const Education = () => {
                     <time className="text-sm italic text-blue-200">Mar 2018 - May 2018 · 3 mos</time>
                     <p className="text-sm mt-2">France</p>
                     <p className="text-sm mt-2">
-                      Collaborated with final-year students at Rubika Supinfogame in
+{`                      Collaborated with final-year students at Rubika Supinfogame in
                       Valenciennes, France, on the project "Of Sands and Steels," a multiplayer
                       boss fight RPG made with Unity Engine. Focused on user interface
-                      programming and audio interface programming.
+                      programming and audio interface programming.`}
                     </p>
                   </div>
                 </div>

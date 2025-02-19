@@ -53,7 +53,7 @@ const Referrals: React.FC<ReferralsProps> = ({ referrals }) => {
                   <p className="text-xs text-gray-400 mb-2">
                     {referral.connection}
                   </p>
-                  <p className="text-sm italic">"{referral.message}"</p>
+                  <p className="text-sm italic">{`"${referral.message}"`}</p>
                   <p className="text-xs text-gray-500 mt-2">{referral.date}</p>
                 </div>
               </CarouselItem>
