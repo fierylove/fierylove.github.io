@@ -28,7 +28,6 @@ export const projects = [
     descriptions: [
       "Kitchen Madness is a game where two players race to complete objectives to see who reaches the score limit first. Both players need to buy ingredients and cook dishes that are being requested. First player to fulfill the objective gets the score!",
       "Players are also able to steal from their competitor to finish their dishes first!",
-      "                                                                                  ",
       "This is my 2nd game project in DigiPen, made during my freshman year for a period of 3 months, using DigiPen's Alpha Engine, an OpenGL wrapper library. For this project, I worked in a team of 3 programmers and served as the lead.",
       "As the technical/project lead, I implemented an Object Oriented Programming Architecture and did the programming for the gameplay mechanics. In addition to that, I implemented it to be data-driven so that modifications can be made easily. I also engaged in pair programming sessions to help fellow teammates who required assistance.",
     ],
