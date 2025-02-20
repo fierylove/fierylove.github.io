@@ -8,7 +8,7 @@ interface ReadMoreProps {
   collapsedHeight?: number;
 }
 
-const ReadMore = ({ children, collapsedHeight = 60 }: ReadMoreProps) => {
+const ReadMore = ({ children, collapsedHeight = 120 }: ReadMoreProps) => {
   const [expanded, setExpanded] = useState(false);
   return (
     <div>

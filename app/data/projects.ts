@@ -44,7 +44,7 @@ export const projects = [
       "./images/07/image6.png",
     ],
     descriptions: [
-      "07 is a 3D game where you play as a miner lost in the mines. The mines are swarmed with monsters and traps! Fortunately, you have a pickaxe that can be used as a gun as well. Mine the ores for bullets, upgrade your pickaxe and escape the mines.",
+      "07 is a 3D game where you play as a miner lost in the mines. The mines are swarmed with really scary monsters and traps! Fortunately, you have a pickaxe that can be used as a gun as well. Mine the ores for bullets, upgrade your pickaxe and escape the mines.",
       "This is my 4th game project in Nanyang Polytechnic, made using Unity Engine in a team of 9 in the span of 3 weeks.",
       "For this project, I was the gameplay programmer, implementing the AI logic using state machines for the enemies.",
       "In addition to that, I also implemented some of the User Interface.",

@@ -54,7 +54,7 @@ const Projects = () => {
                         </div>
                       )}
                       {project.descriptions && (
-                        <ReadMore collapsedHeight={120}>
+                        <ReadMore collapsedHeight={90}>
                           {project.descriptions.map((desc, idx) => (
                             <p
                               key={idx}
