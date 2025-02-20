@@ -33,6 +33,7 @@ const Referrals: React.FC<ReferralsProps> = ({ referrals }) => {
               <div
                 key={index}
                 className="bg-primary p-6 rounded shadow text-center w-full sm:w-1/2 md:w-1/3"
+                data-aos="fade-up"
               >
                 <img
                   src={referral.profileImage}
@@ -68,7 +69,7 @@ const Referrals: React.FC<ReferralsProps> = ({ referrals }) => {
           <CarouselContent className="-ml-2 flex">
             {referrals.map((referral, index) => (
               <CarouselItem key={index} className="pl-2 basis-1/3">
-                <div className="bg-primary p-6 rounded shadow text-center">
+                <div className="bg-primary p-6 rounded shadow text-center" data-aos="fade-up">
                   <img
                     src={referral.profileImage}
                     alt={`${referral.name} profile picture`}

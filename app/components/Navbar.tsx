@@ -20,7 +20,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-gray-50 dark:bg-gray-900 p-4 shadow-md">
+    <nav className="bg-blue-300 dark:bg-gray-900 p-4 shadow-md">
       <div className="container mx-auto flex items-center justify-between">
         {/* Branding */}
         <div className="text-gray-900 dark:text-gray-100 font-bold text-xl">

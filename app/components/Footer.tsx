@@ -6,7 +6,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa"; // Import ico
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-400  py-6">
+        <footer className="bg-blue-300  py-6">
             <div className="container mx-auto px-4 flex flex-col items-center">
                 <div className="mt-6 flex gap-4 justify-center">
                     <Link href="https://www.linkedin.com/in/marcustan99/" target="_blank">
