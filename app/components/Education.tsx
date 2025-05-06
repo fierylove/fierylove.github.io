@@ -31,7 +31,7 @@ const Education = () => {
                     <div>
                       <h3 className="text-xl font-bold">Vthere</h3>
                       <h4 className="text-sm text-blue-400">Unity Developer (Internship)</h4>
-                      <time className="text-sm italic text-blue-200">Jul 2024 - Present · 8 mos</time>
+                      <time className="text-sm italic text-blue-200">Jul 2024 - Apr 2025 · 10 mos</time>
                       <p className="text-sm mt-2">Singapore, Singapore · Hybrid</p>
                       <p className="text-sm mt-2">Making XR apps using Unity</p>
                     </div>
